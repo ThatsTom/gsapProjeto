@@ -1,4 +1,23 @@
+.glass-background {
+    background-image: url('https://i.pinimg.com/736x/e0/44/2c/e0442c24a95585b818dc39da477ebe88.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência para o efeito de vidro borrado */
+    backdrop-filter: blur(10px); /* Efeito de vidro borrado */
+  }
+
 .carousel {
+    margin: 24px;
     position: relative;
     overflow: hidden;
 }
@@ -17,13 +36,10 @@
 .card img {
     width: 300px;
     height: 500px;
-    transition: transform 0.5s;
+
     margin-left: 20px;
 }
 
-.card:hover img {
-    transform: translateY(-10px) rotateY(-15deg);
-}
 
 .card-content {
     position: absolute;
